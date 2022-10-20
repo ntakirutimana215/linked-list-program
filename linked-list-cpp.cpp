@@ -47,7 +47,10 @@ class List {
 			head = l2.head;
 			tail = l2.tail;
 		}
-		
+		void operator= (const List & l){
+		        head=l.head;
+			tail=l.tail;
+		}
 		void displayList(){
 		    node *temp=new node;
 		    temp = head;
@@ -244,3 +247,14 @@ int main() {
     }
 	
 }
+##TIME COMPLEXITY##
+insertNodeBeginning():O(1)
+	insertNodeatend():O(n)
+	deleteNode():O(n)
+	remove_duplicate():O(n)
+	search():O(n)
+	reverse():O(n)
+	displayList():O(n)
+	List():O(n)
+	List():O(1)
+	List():O(1)
